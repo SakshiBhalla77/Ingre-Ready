@@ -21,7 +21,7 @@ IngreReady is a web application that helps users find meals based on the ingredi
 [IngreReady Web App](https://kumar-karan.github.io/IngreReady/)
 
 ## Credits:
-- Developed by: Kumar Karan
+- Developed by: Karan Kumar and Sakshi Bhalla
 - Icon Credits: [Font Awesome](https://fontawesome.com/)
 - Quote by Jamie Oliver.
 
