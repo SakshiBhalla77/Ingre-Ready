@@ -1,0 +1,65 @@
+/* contact.css */
+
+.contact-content {
+  text-align: center; /* Center-align the text */
+}
+
+.contact-content h2 {
+  font-size: 24px; /* Adjust the font size as needed */
+}
+
+.contact-content p {
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+.profiles {
+  margin-top: 40px; /* Add margin to create a gap between the message form and the profile pictures */
+}
+
+.profile {
+  display: inline-block;
+  margin-right: 20px;
+  width: 200px; /* Adjust the width and height of the profile pictures */
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile img {
+  width: 100%; /* Ensure the image fills the circular container */
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Adjust alignment as needed */
+}
+
+.contact-wrapper,
+.team-wrapper {
+  flex: 1;
+
+  margin-right: 20px; /* Adjust margin between sections */
+}
+
+.contact-wrapper {
+  max-width: 400px; /* Adjust max-width as needed */
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around; /* Adjust alignment of team members */
+  gap: 20px; /* Adjust gap between team members */
+}
+
+/* Additional styles for team members and contact form */

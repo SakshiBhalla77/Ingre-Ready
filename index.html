@@ -11,8 +11,22 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">Logo</a>
+        <ul class="navbar-menu">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="#services" class="navbar-link">Services</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container">
       <div class="meal-wrapper">
         <div class="meal-search">
@@ -39,7 +53,7 @@
         </div>
 
         <div class="meal-result">
-          <h2 class="title">Search Results:</h2>
+          <h2 class="title">Your Search Results:</h2>
           <div id="meal">
             <!-- meal item -->
             <!-- <div class = "meal-item">

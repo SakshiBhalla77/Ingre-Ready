@@ -41,7 +41,7 @@ body {
 
 /*  */
 .container {
-  min-height: 100vh;
+  min-height: 20vh;
 }
 .meal-wrapper {
   max-width: 1280px;

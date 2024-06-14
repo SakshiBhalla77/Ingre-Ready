@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Ingre-Ready</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <style>
+      /* Additional CSS for circular profile pictures and side by side display */
+
+      .team-members {
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+        margin-bottom: 30px;
+      }
+      .team-member {
+        text-align: center;
+      }
+      .team-wrapper {
+        text-align: center;
+      }
+
+      .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #f0f0e8; /* You can adjust the border color */
+      }
+      .team-member .social-buttons {
+        margin-top: 10px;
+        text-align: center;
+      }
+      .team-member .social-buttons a {
+        margin-right: 10px;
+        color: #000; /* Adjust the color as needed */
+        font-size: 24px;
+      }
+      .team-member .social-buttons a:hover {
+        color: #0077b5; /* Adjust the hover color for LinkedIn */
+      }
+      .team-member h3 {
+        margin-top: 10px; /* Adjust as needed */
+      }
+
+      .contact-form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: inline-block;
+        width: 100px; /* Adjust width as needed */
+        text-align: left;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      .submit-btn {
+        background-color: #704264;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .submit-btn:hover {
+        background-color: #470a34;
+      }
+      .contact-wrapper h2.title {
+        text-align: center;
+      }
+      .contact-wrapper p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">Logo</a>
+        <ul class="navbar-menu">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="#services" class="navbar-link">Services</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="flex-container">
+        <div class="contact-wrapper">
+          <h2 class="title">Contact Us</h2>
+          <p>
+            Have any questions or feedback? Reach out to us using the form
+            below:
+          </p>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn submit-btn">Submit</button>
+          </form>
+        </div>
+
+        <div class="team-wrapper">
+          <h2 class="title">Our Team</h2>
+          <div class="team-members">
+            <div class="team-member">
+              <img src="./assets/ken.jpg" alt="Karan Kumar" />
+              <h3>Karan Kumar</h3>
+              <p>FullStack Developer</p>
+              <div class="social-buttons">
+                <a
+                  href="https://www.linkedin.com/in/karan-kumar-dev/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/kumar-karan" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="./assets/saks.jpeg" alt="Sakshi Bhalla" />
+              <h3>Sakshi Bhalla</h3>
+              <p>Frontend Developer</p>
+              <div class="social-buttons">
+                <a
+                  href="https://www.linkedin.com/in/sakshibhalla0/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/SakshiBhalla77" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
