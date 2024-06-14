@@ -20,6 +20,10 @@
   font-weight: 700;
   text-decoration: none;
 }
+.navbar-logo img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* This ensures the height adjusts proportionally */
+}
 
 .navbar-menu {
   list-style: none;
