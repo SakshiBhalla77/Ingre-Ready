@@ -2,7 +2,7 @@
 
 /* Navbar Styles */
 .navbar {
-  background-color: var(--tenne-tawny);
+  background-color: transparent;
   padding: 0.8rem;
 }
 
@@ -38,9 +38,9 @@
   transition: color 0.4s linear;
 }
 
-.navbar-link:hover {
-  color: var(--tenne-tawny-dark);
-}
+/* .navbar-link:hover {
+  color: #6c567d;
+} */
 
 /* Media Queries for Navbar */
 @media (max-width: 768px) {
