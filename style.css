@@ -31,13 +31,14 @@ body {
 .title {
   /* font-family: "Juana", serif; Apply Juana font */
   font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
+
 .meal-result h2.title {
   font-weight: normal; /* Change the font weight to normal for "Your Search Results" */
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-family: "Poppins", sans-serif; /* Change the font size to 1.5rem for "Your Search Results" */
 }
 
@@ -57,12 +58,32 @@ body {
   font-size: 1.05rem;
 }
 
+.contact-wrapper input[type="text"],
+.contact-wrapper input[type="email"],
+.contact-wrapper textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent; /* Purple background color */
+  color: #fff; /* Text color */
+}
+
 .text {
   opacity: 0.8;
 }
 
 .container {
   min-height: 20vh;
+}
+#container1 {
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+}
+
+#container1:hover {
+  transform: scale(1.05); /* Move the container up slightly on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
 }
 
 .meal-wrapper {

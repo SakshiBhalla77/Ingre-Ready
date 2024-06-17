@@ -1,5 +1,34 @@
 /* contact.css */
 
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f0f0e8; /* You can adjust the border color */
+  transition: transform 0.3s ease; /* Add transition for zoom effect */
+}
+
+.team-member img:hover {
+  transform: scale(1.2); /* Zoom in on the image on hover */
+}
+
+.team-member .social-buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+.team-member .social-buttons a {
+  margin-right: 10px;
+  color: #fff; /* Adjust the color as needed */
+  font-size: 24px;
+}
+.team-member .social-buttons a:hover {
+  color: #4a3a56; /* Adjust the hover color for LinkedIn */
+}
+.team-member h3 {
+  margin-top: 10px; /* Adjust as needed */
+}
+
 .contact-content {
   text-align: center; /* Center-align the text */
 }
