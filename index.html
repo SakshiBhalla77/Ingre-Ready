@@ -11,14 +11,30 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">
+          <img src="./assets/LOGO.png" alt="Logo" style="width: 130px" />
+        </a>
+        <ul class="navbar-menu">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="#services" class="navbar-link">Services</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container">
       <div class="meal-wrapper">
         <div class="meal-search">
           <h2 class="title">
-            Ingre-Ready - Find Meals For Your Ingredients
-            <img src="./assets/foodgirl.png.png" />
+            Ingre Ready - Find Meals For Your Ingredients
+            <!-- <img src="./assets/chef.png" /> -->
           </h2>
           <blockquote>
             Real food does not have ingredients, real food is ingredients.<br />
@@ -29,7 +45,7 @@
             <input
               type="text"
               class="search-control"
-              placeholder="Enter an ingredient"
+              placeholder="Enter an ingredient (Eg: Flour, Eggs, Banana )"
               id="search-input"
             />
             <button type="submit" class="search-btn btn" id="search-btn">
@@ -40,19 +56,7 @@
 
         <div class="meal-result">
           <h2 class="title">Your Search Results:</h2>
-          <div id="meal">
-            <!-- meal item -->
-            <!-- <div class = "meal-item">
-            <div class = "meal-img">
-              <img src = "food.jpg" alt = "food">
-            </div>
-            <div class = "meal-name">
-              <h3>Potato Chips</h3>
-              <a href = "#" class = "recipe-btn">Get Recipe</a>
-            </div>
-          </div> -->
-            <!-- end of meal item -->
-          </div>
+          <div id="meal"></div>
         </div>
 
         <div class="meal-details">
@@ -65,22 +69,7 @@
             <i class="fas fa-times"></i>
           </button>
 
-          <!-- meal content -->
-          <div class="meal-details-content">
-            <!-- <h2 class = "recipe-title">Meals Name Here</h2>
-          <p class = "recipe-category">Category Name</p>
-          <div class = "recipe-instruct">
-            <h3>Instructions:</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
-          </div>
-          <div class = "recipe-meal-img">
-            <img src = "food.jpg" alt = "">
-          </div>
-          <div class = "recipe-link">
-            <a href = "#" target = "_blank">Watch Video</a>
-          </div> -->
-          </div>
+          <div class="meal-details-content"></div>
         </div>
       </div>
     </div>

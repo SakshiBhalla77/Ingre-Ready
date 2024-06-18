@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* Navbar Styles */
+.navbar {
+  background-color: transparent;
+  padding: 0.8rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  color: #f0f0e8;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navbar-logo img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* This ensures the height adjusts proportionally */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-link {
+  color: #f0f0e8;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.4s linear;
+}
+
+/* .navbar-link:hover {
+  color: #6c567d;
+} */
+
+/* Media Queries for Navbar */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
