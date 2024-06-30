@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-/* Existing font import for Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
@@ -23,13 +22,80 @@ body {
   font-weight: 300;
   font-size: 1.05rem;
   line-height: 1.6;
-  font-family: "Poppins", sans-serif; /* Apply Poppins font */
-  background-color: #ebebea;
+  font-family: "Poppins", sans-serif;
+  background: url("./assets/bg 1.png") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  color: #f0f0e8;
 }
 
-/* Use "Juana Semi Bold" for the specific text */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.79);
+  z-index: 1;
+}
+
+.container,
+.navbar,
+.title,
+.text,
+.btn,
+.meal-wrapper,
+.meal-search,
+.meal-result,
+.meal-details {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar {
+  background-color: transparent;
+  padding: 1rem 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.navbar-logo img {
+  width: 130px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-link:hover {
+  background-color: #4a3a56;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.container {
+  min-height: 20vh;
+}
+
 .title {
-  /* font-family: "Juana", serif; Apply Juana font */
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -37,18 +103,18 @@ body {
 }
 
 .meal-result h2.title {
-  font-weight: normal; /* Change the font weight to normal for "Your Search Results" */
+  font-weight: normal;
   font-size: 1.3rem;
-  font-family: "Poppins", sans-serif; /* Change the font size to 1.5rem for "Your Search Results" */
+  font-family: "Poppins", sans-serif;
 }
 
 .title img {
-  width: 180px; /* Adjust the width of the image */
-  height: auto; /* Maintain aspect ratio */
-  margin-left: 0px; /* Adjust the margin between the text and the image */
+  width: 180px;
+  height: auto;
+  margin-left: 0px;
   display: inline-block;
   padding-bottom: 2rem;
-  vertical-align: middle; /* Align the image vertically with the text */
+  vertical-align: middle;
 }
 
 .btn {
@@ -56,34 +122,6 @@ body {
   cursor: pointer;
   outline: 0;
   font-size: 1.05rem;
-}
-
-.contact-wrapper input[type="text"],
-.contact-wrapper input[type="email"],
-.contact-wrapper textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  background-color: transparent; /* Purple background color */
-  color: #fff; /* Text color */
-}
-
-.text {
-  opacity: 0.8;
-}
-
-.container {
-  min-height: 20vh;
-}
-#container1 {
-  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
-}
-
-#container1:hover {
-  transform: scale(1.05); /* Move the container up slightly on hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
 }
 
 .meal-wrapper {
@@ -110,29 +148,24 @@ body {
 
 .search-control,
 .search-btn {
-  width: 100%;
   color: #311e14;
 }
 
 .search-control {
+  width: 100%;
   padding: 0 1rem;
   font-size: 1.1rem;
   font-family: inherit;
   outline: 0;
-  border: #4a3a56;
+  border: 1px solid #4a3a56;
   color: #4a3a56;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
+  background-color: var(--tenne-tawny);
 }
 
 .search-control::placeholder {
-  color: var(--tenne-tawny);
-}
-.navbar-link:hover {
-  background-color: #4a3a56; /* Background color of the button on hover */
-  color: #fff; /* Text color of the button on hover */
-  padding: 0.5rem 1rem; /* Adjust padding to make it look like a button */
-  border-radius: 5px; /* Rounded corners to resemble a button */
+  color: #4a3a56;
 }
 
 .search-btn {
@@ -145,10 +178,6 @@ body {
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
   transition: all 0.4s linear;
-}
-
-.search-control::placeholder {
-  color: #4a3a56; /* Change the color of the placeholder text */
 }
 
 .search-btn:hover {
@@ -187,7 +216,6 @@ body {
   text-decoration: none;
   color: #f0f0e8;
   background-color: #4a3a56;
-
   font-weight: 500;
   font-size: 1.1rem;
   padding: 0.75rem 0;
@@ -212,9 +240,11 @@ body {
   border-radius: 1rem;
   width: 90%;
   height: 90%;
-  overflow-y: scroll;
+  overflow-y: auto;
   display: none;
-  padding: 2rem 0;
+  padding: 2rem;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  z-index: 10;
 }
 
 .meal-details::-webkit-scrollbar {
@@ -237,7 +267,6 @@ body {
 
 .meal-details-content p:not(.recipe-category) {
   padding: 1rem 0;
-  /* color: #6c567d; */
 }
 
 .recipe-close-btn {
@@ -283,7 +312,8 @@ body {
 }
 
 .recipe-link {
-  margin: 1.4rem 0;
+  margin: 1.4rem 0 0; /* Adjust margin to remove bottom space */
+  text-align: center; /* Center align the content */
 }
 
 .recipe-link a {
@@ -291,6 +321,7 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   transition: all 0.4s linear;
+  display: inline-block; /* Ensure the link is inline-block */
 }
 
 .recipe-link a:hover {
@@ -303,43 +334,6 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   width: 100%;
-}
-
-body {
-  font-weight: 300;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  font-family: "Poppins", sans-serif; /* Apply Poppins font */
-  background: url("./assets/bg\ 1.png") no-repeat center center fixed;
-  background-size: cover;
-  position: relative;
-  color: #f0f0e8;
-}
-
-/* Add a black transparent overlay */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.79); /* Adjust the opacity as needed */
-  z-index: 1;
-}
-
-/* Ensure all content is on top of the overlay */
-.container,
-.navbar,
-.title,
-.text,
-.btn,
-.meal-wrapper,
-.meal-search,
-.meal-result,
-.meal-details {
-  position: relative;
-  z-index: 2;
 }
 
 @media screen and (min-width: 600px) {
