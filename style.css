@@ -239,7 +239,7 @@ body::before {
   background: var(--tenne-tawny);
   border-radius: 1rem;
   width: 90%;
-  height: 90%;
+  height: auto;
   overflow-y: auto;
   display: none;
   padding: 2rem;
@@ -313,7 +313,8 @@ body::before {
 
 .recipe-link {
   margin: 1.4rem 0 0; /* Adjust margin to remove bottom space */
-  text-align: center; /* Center align the content */
+  text-align: center;
+  /* Center align the content */
 }
 
 .recipe-link a {
