@@ -16,7 +16,7 @@ IngreReady is a web application that helps users find meals based on the ingredi
 2. Click on the search button.
 3. Explore the suggested meals based on your ingredients.
 4. Click on a meal to view its recipe details.
-
+   
 ## Deployment Link:
 [IngreReady Web App](https://kumar-karan.github.io/IngreReady/)
 
